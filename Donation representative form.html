@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="form1_style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="requestForm" action="submit_form.php" method="POST"> 
+            <label for="name">الاسم *</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="province">المحافظة *</label>
+            <select id="province" name="province" required>
+                <option value="">اختر المحافظة</option>
+                <option value="بغداد">بغداد</option>
+                <option value="كربلاء المقدسة">كربلاء المقدسة</option>
+                <option value="النجف الأشرف">النجف الأشرف</option>
+                <option value="بابل">بابل</option>
+                <option value="الديوانية">الديوانية</option>
+                <option value="ميسان">ميسان</option>
+                <option value="المُثنى">المُثنى</option>
+                <option value="الأنبار">الأنبار</option>
+                <option value="الموصل">الموصل</option>
+                <option value="دهوك">دهوك</option>
+                <option value="سليمانية">سليمانية</option>
+                <option value="أربيل">أربيل</option>
+                <option value="كركوك">كركوك</option>
+                <option value="ديالى">ديالى</option>
+                <option value="ذي قار">ذي قار</option>
+                <option value="صلاح الدين">صلاح الدين</option>
+                <option value="البصرة">البصرة</option>
+                <option value="واسط">واسط</option>
+                <!-- Add more provinces as needed -->
+            </select>
+        
+            <label for="region">المنطقة</label>
+            <input type="text" id="region" name="region">
+        
+            <label for="phone">الهاتف *</label>
+            <input type="tel" id="phone" name="phone" required>
+        
+            <label for="email">البريد الإلكتروني (اختياري)</label>
+            <input type="email" id="email" name="email">
+        
+            <label for="requestType">نوع الطلب *</label>
+            <select id="requestType" name="requestType" required>
+                <option value="">اختر نوع الطلب</option>
+                <option value="مجمل أعمال إمداد">مجمل أعمال إمداد</option>
+                <option value="تبرع لمركز التأمين الصحي">تبرع لمركز التأمين الصحي</option>
+                <option value="صدقة جارية">صدقة جارية</option>
+                <option value="كفالة يتيم">كفالة يتيم</option>
+                <option value="مساهمة في كفالة يتيم">مساهمة في كفالة يتيم</option>
+                <option value="صناديق الصدقات">صناديق الصدقات</option>
+                <option value="اخرى">اخرى</option>
+
+                <!-- Add more request types as needed -->
+            </select>
+        
+            <button type="submit">إرسال</button>
+        </form>
+        
+
+    </div>
+    <!--<script src="form_script.js"></script> -->
+</body>
+</html>
